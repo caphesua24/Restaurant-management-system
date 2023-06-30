@@ -1,0 +1,23 @@
+.float-right {
+  float: right;
+  background-color: #081ba9;
+}
+.float-right .mat-icon {
+  color: white;
+}
+
+mat-card {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+::ng-deep .highlight {
+  color: white;
+  background: #081ba9;
+}
+.mat-icon {
+  color: #081ba9;
+}
