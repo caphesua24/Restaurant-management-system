@@ -46,8 +46,14 @@ export class UserService {
   }
 
   // 01/07/2023
+  // update(data: any) {
+  //   return this.httpClient.post(this.update + '/user/update', data, {
+  //     headers: new HttpHeaders().set('Content-Type', 'application/json'),
+  //   });
+  // }
+
   update(data: any) {
-    return this.httpClient.post(this.update + '/user/update', data, {
+    return this.httpClient.post(this.url + '/user/update', data, {
       headers: new HttpHeaders().set('Content-Type', 'application/json'),
     });
   }
