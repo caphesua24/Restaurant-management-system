@@ -39,4 +39,16 @@ export class UserService {
       headers: new HttpHeaders().set('Content-Type', 'application/json'),
     });
   }
+
+  // 01/07/2023
+  getUsers() {
+    return this.httpClient.get(this.url + '/user/get');
+  }
+
+  // 01/07/2023
+  update(data: any) {
+    return this.httpClient.post(this.update + '/user/update', data, {
+      headers: new HttpHeaders().set('Content-Type', 'application/json'),
+    });
+  }
 }
